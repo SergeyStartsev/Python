@@ -7,5 +7,5 @@ from decimal import Decimal
 import os
 os.system("cls")
 
-d = Decimal(input("Задайте точность для Пи: "))
-print(f'\nЧисло π с заданной точностью {d} равно {str(pi)[:len(str(d))]}')
+d = Decimal(input("Задайте точность для числа Пи: "))
+print(f'\nЧисло Пи с заданной точностью {d} равно {str(pi)[:len(str(d))]}')
