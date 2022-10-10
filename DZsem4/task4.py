@@ -16,6 +16,6 @@ polinomial = result + str(randint(0, 100)) + '= 0'
 data = open('task_019.txt', 'w')
 data.writelines(polinomial)
 data.close()
-with open('task_019.txt', 'r') as data:  # попробуем with
-    print(
+with open('task_019.txt', 'r') as data: 
+        print(
         f'Многочлен степени "{k}" = {data.readlines()}')
