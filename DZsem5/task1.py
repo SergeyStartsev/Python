@@ -61,7 +61,7 @@ counter2 = 0
 counter3 = 0
 includ = 0
 print('\nКоличество конфет на столе:', value)
-flag = randint(0, 2)  # флаг очередности
+flag = randint(0, 2)  
 if flag:
     print(f'Первый ходит {player1}')
 elif flag and player2 == 'Бот':
