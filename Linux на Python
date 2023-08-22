@@ -1,0 +1,28 @@
+python
+import subprocess
+
+def check_command_output(command, text):
+    try:
+        output = subprocess.check_output(command, shell=True, universal_newlines=True)
+        return text in output
+    except subprocess.CalledProcessError:
+        return False
+
+
+python
+import subprocess
+import string
+
+def check_command_output(command, text, word_mode=False):
+    try:
+        output = subprocess.check_output(command, shell=True, universal_newlines=True)
+        if word_mode:
+# Удаление знаков пунктуации из вывода
+            output = output.translate(str.maketrans('', '', string.punctuation))
+# Разбиение вывода на слова
+            output_words = output.split()
+            return text in output_words
+        else:
+            return text in output
+    except subprocess.CalledProcessError:
+        return False
