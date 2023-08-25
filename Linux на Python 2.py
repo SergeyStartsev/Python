@@ -2,11 +2,9 @@ python
 import unittest
 import subprocess
 
-python
 class TestCommands(unittest.TestCase):
     pass
 
-python
 class TestCommands(unittest.TestCase):
     def test_list_files(self):
 # Тестирование команды вывода списка файлов (l)
@@ -16,7 +14,6 @@ class TestCommands(unittest.TestCase):
 # Тестирование команды разархивирования с путями (x)
 # Ваш код теста
 
-python
 class TestCommands(unittest.TestCase):
     def test_list_files(self):
 # Тестирование команды вывода списка файлов (l)
@@ -31,7 +28,6 @@ class TestCommands(unittest.TestCase):
         for file in extracted_files:
             self.assertTrue(os.path.exists(file))
 
-python
 if __name__ == '__main__':
     unittest.main
 
